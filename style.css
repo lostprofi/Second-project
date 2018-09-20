@@ -1,0 +1,386 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html  {
+  font-size: 22px;
+  font-family: helvetica, serif;
+}
+
+body {
+  background-color: black;
+}
+
+/*-----navigation-----*/
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    z-index: 10;
+  }
+
+    nav {
+      padding-left: 15px;
+      padding-right: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      height: 69px;
+    }
+
+      .navlogo{
+        height: 50px;
+      }
+
+        .navlogo img {
+          position:relative;
+          width: auto;
+          height: 100%;
+        }
+
+      .navigation {
+        display: flex;
+        margin-right: -15px;
+      }
+
+        .navlist {
+          list-style: none;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+          .navlist a {
+            color: seashell;
+            opacity: 0.9;
+          }
+
+/*-----navigation-----*/
+
+/*-----section1-----*/
+
+.mission{
+  margin-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+  .container {
+    width: 100%;
+    height: 700px;
+    background: url('resources/img-mission-background.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+  }
+    .banner{
+      background-color: black;
+      width: 100%;
+    }
+
+
+
+       h4, h5 {
+        color: seashell;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+/*section1*/
+
+/*section2*/
+  .totm {
+   
+    padding-left: 15px;
+    padding-right: 15px;
+    
+  }
+
+  .section2-container {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	max-width: 1140px;
+	margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+    figure {
+      width: 300px;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+
+      figure img {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+    .card p {
+      color: seashell;
+      text-align: center;
+    }
+/*section2*/
+
+/*section3*/
+
+.locations {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+  .locations .container {
+    height: 500px;
+    background: url('resources/img-locations-background.jpg') no-repeat center center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .locations .container h2 {
+    padding: 0 0 10px 0;
+    color: seashell;
+    text-align: center;
+  }
+
+  .container-2 {
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+    .card-locations {
+      width: 300px;
+      color: seashell;
+      background-color: black;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+      .card-locations h3 {
+        padding: 10px 0;
+      }
+
+      .card-locations p {
+        padding-bottom: 10px;
+      }
+
+
+
+/*section3*/
+
+/*section4*/
+
+.contacts {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: seashell;
+  text-align: center;
+}
+
+/*section4*/
+
+footer{
+  color: seashell;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+  footer h5 {
+    text-align: left;
+    padding: 0 0 10px 0;
+
+  }
+
+  #h2 {
+    padding-top: 10px;
+    color: seashell;
+    text-align: center;
+  }
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 20px;
+  }
+
+
+}
+
+@media (min-width: 690px) and (max-width: 991px) {
+  html {
+    font-size: 18px;
+  }
+  .container-2 {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .locations .container {
+    height: auto;
+  }
+  .locations .container h2 {
+    padding-top: 10px;
+  }
+
+  .card-locations {
+    width: 350px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 689px) {
+  html {
+    font-size: 18px;
+  }
+  .container-2 {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .locations .container {
+    height: auto;
+  }
+
+  .locations .container h2 {
+    padding-top: 10px;
+  }
+
+  .card-locations {
+    width: 350px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .section2-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 16px;
+  }
+  .section2-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-2 {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .locations .container {
+    height: auto;
+  }
+
+  .locations .container h2 {
+    padding-top: 10px;
+  }
+
+  .card-locations {
+    width: 300px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+
+
+
+  .navigation {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .navlogo img {
+    position:relative;
+    width: auto;
+    height: 100%;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  .navlist a {
+    color: seashell;
+    opacity: 0.9;
+    text-decoration: none;
+
+  }
+  nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  body {
+    min-width: 330px;
+  }
+  
+
+  .mission{
+    margin-top: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  header {
+	  min-width: 339px;
+  }
+
+}
+
